@@ -1,3 +1,4 @@
 FROM alpine
-ADD pod /
-ENTRYPOINT ["/pod"]
+COPY pod /pod
+WORKDIR "/"
+CMD ["./pod"]
