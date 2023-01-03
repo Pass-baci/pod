@@ -1,0 +1,14 @@
+{"level":"info","ts":"2022-12-30T10:51:27.126+0800","caller":"pod/main.go:49","msg":"添加配置中心consul成功"}
+{"level":"info","ts":"2022-12-30T10:51:27.195+0800","caller":"pod/main.go:56","msg":"配置中心获取数据库配置成功"}
+{"level":"info","ts":"2022-12-30T10:51:27.200+0800","caller":"pod/main.go:69","msg":"连接数据库成功"}
+{"level":"info","ts":"2022-12-30T10:51:27.201+0800","caller":"pod/main.go:76","msg":"配置中心获取Jaeger配置成功"}
+{"level":"info","ts":"2022-12-30T10:51:27.234+0800","caller":"pod/main.go:85","msg":"添加链路追踪成功"}
+{"level":"fatal","ts":"2022-12-30T10:51:27.236+0800","caller":"pod/main.go:121","msg":"创建config实例失败 err: CreateFile C:\\Users\\v_chgvchen\\.home\\config: The system cannot find the path specified. \n"}
+{"level":"info","ts":"2022-12-30T10:52:23.748+0800","caller":"pod/main.go:49","msg":"添加配置中心consul成功"}
+{"level":"info","ts":"2022-12-30T10:52:23.762+0800","caller":"pod/main.go:56","msg":"配置中心获取数据库配置成功"}
+{"level":"info","ts":"2022-12-30T10:52:23.767+0800","caller":"pod/main.go:69","msg":"连接数据库成功"}
+{"level":"info","ts":"2022-12-30T10:52:23.767+0800","caller":"pod/main.go:76","msg":"配置中心获取Jaeger配置成功"}
+{"level":"info","ts":"2022-12-30T10:52:23.795+0800","caller":"pod/main.go:85","msg":"添加链路追踪成功"}
+{"level":"info","ts":"2022-12-30T10:52:23.797+0800","caller":"pod/main.go:123","msg":"创建config实例成功"}
+{"level":"info","ts":"2022-12-30T10:52:23.797+0800","caller":"pod/main.go:136","msg":"创建k8s客户端成功"}
+{"level":"info","ts":"2022-12-30T10:52:23.870+0800","caller":"pod/main.go:159","msg":"创建数据表成功"}
