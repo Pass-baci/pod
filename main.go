@@ -7,6 +7,7 @@ import (
 	"github.com/Pass-baci/pod/domain/repository"
 	"github.com/Pass-baci/pod/domain/service"
 	"github.com/Pass-baci/pod/handler"
+	hystrix2 "github.com/Pass-baci/pod/plugin/hystrix"
 	"github.com/Pass-baci/pod/proto/pod"
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/asim/go-micro/v3"
@@ -153,7 +154,7 @@ func main() {
 		micro.WrapHandler(microOpentracing.NewHandlerWrapper(opentracing.GlobalTracer())),
 		micro.WrapClient(microOpentracing.NewClientWrapper(opentracing.GlobalTracer())),
 		// 只作为客户端的时候起作用
-		//micro.WrapClient(hystrix2.NewClientHystrixWrapper()),
+		micro.WrapClient(hystrix2.NewClientHystrixWrapper()),
 		// 添加限流
 		micro.WrapHandler(ratelimiter.NewHandlerWrapper(1000)),
 	)
