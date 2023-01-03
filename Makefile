@@ -8,4 +8,4 @@ build:
 
 .PHONY: docker
 docker:
-	docker build . -t baci/pod:latest
+	docker build . -t baciyou/pod:latest
