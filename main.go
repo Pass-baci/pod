@@ -74,7 +74,7 @@ func main() {
 
 	// 使用配置中心获取Jaeger配置
 	var jaegerConfig = &common.JaegerConfig{}
-	if jaegerConfig, err = common.GetJaegerConfigFromConsul(conf, "jaeger"); err != nil {
+	if jaegerConfig, err = common.GetJaegerConfigFromConsul(conf, "jaeger-pod"); err != nil {
 		common.Fatalf("配置中心获取Jaeger配置失败 err: %s \n", err.Error())
 	}
 	common.Info("配置中心获取Jaeger配置成功")
