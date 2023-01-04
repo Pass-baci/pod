@@ -8,7 +8,7 @@ build:
 
 .PHONY: docker-build
 docker-build:
-	docker build . -t baciyou/pod:latest
+	docker build -t baciyou/pod:latest .
 
 .PHONY: docker-stop
 docker-stop:
