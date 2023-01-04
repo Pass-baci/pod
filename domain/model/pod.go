@@ -12,7 +12,7 @@ type Pod struct {
 	PodName      string `gorm:"unique_index;not_null" json:"pod_name"`
 	PodNamespace string `json:"pod_namespace"`
 	// Pod 所属团队
-	PodTeamID int64 `json:"pod_team_id"`
+	PodTeamID string `json:"pod_team_id"`
 	// Pod 使用的cpu最小值
 	PodCpuMin float32 `json:"pod_cpu_min"`
 	// Pod 使用的cpu最大值

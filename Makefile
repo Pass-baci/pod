@@ -9,3 +9,7 @@ build:
 .PHONY: docker
 docker:
 	docker build . -t baciyou/pod:latest
+
+.PHONY: docker-run
+docker-run:
+	docker run -p 8081:8081 -p 9092:9092 -p 9192:9192 -v ~/.kube/config:/root/.kube/config -v /home/go-pro/src/GoPass/pod/micro.log:/micro.log baciyou/pod
