@@ -7,7 +7,7 @@ build:
 	CGO_ENABLED="0" GOOS=linux GOARCH=amd64 go build -o pod *.go
 
 .PHONY: docker-build
-docker:
+docker-build:
 	docker build . -t baciyou/pod:latest
 
 .PHONY: docker-stop
@@ -19,7 +19,7 @@ docker-rm:
 	docker rm gopass-pod
 
 .PHONY: docker-rmi
-docker-rm:
+docker-rmi:
 	docker image rm baciyou/pod:latest
 
 .PHONY: docker-run
